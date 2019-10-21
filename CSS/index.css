@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Header Coding Here */
+nav .logo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.links a {
+  text-decoration: none;
+  color: black;
+}
+nav .links {
+  width: 100%;
+  text-align-last: right;
+}
+nav .logo img {
+  width: 6%;
+  padding: 1%;
+}
+.logo h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-left: -5%;
+}
+nav .header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Cinzel Decorative Regular'), local('CinzelDecorative-Regular'), url(https://fonts.gstatic.com/s/cinzeldecorative/v8/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Prata';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Prata Regular'), local('Prata-Regular'), url(https://fonts.gstatic.com/s/prata/v10/6xKhdSpbNNCT-sWPCms.ttf) format('truetype');
+}
+/* Main Coding Starts Here */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background: #AB978D;
+  font-family: 'Prata', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cinzel Decorative', serif;
+}
+.main-container {
+  height: 90vh;
+  background: #28293C;
+  background: url(https://cdn.pixabay.com/photo/2017/09/07/01/12/bake-2723655_960_720.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.main-container .main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+}
+.main-content {
+  background: #AB978D;
+  opacity: 0.6;
+  width: 85%;
+}
+.main-content h1 {
+  font-size: 5rem;
+}
+.main-content button {
+  background-color: whitesmoke;
+  padding: 20px 70px;
+  font-size: 3rem;
+}
