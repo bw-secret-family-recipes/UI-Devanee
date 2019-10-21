@@ -201,7 +201,7 @@ h5 {
   align-items: center;
 }
 .main-container {
-  height: 70vh;
+  height: 65vh;
   background: #28293C;
   background: url(https://cdn.pixabay.com/photo/2017/09/07/01/12/bake-2723655_960_720.jpg);
   background-size: cover;
@@ -213,8 +213,8 @@ h5 {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-items: center;
-  height: 30%;
+  justify-content: center;
+  height: 50%;
 }
 .main-content {
   background: #AB978D;
@@ -248,6 +248,33 @@ h5 {
 }
 .footer h3 {
   font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .logo h1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav .header-main {
+    text-align: center;
+    font-size: 2rem;
+  }
+  nav .logo img {
+    width: 10%;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-container .main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
 }
 * {
   box-sizing: border-box;
