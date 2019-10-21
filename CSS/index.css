@@ -139,6 +139,7 @@ nav .logo {
 .links a {
   text-decoration: none;
   color: black;
+  padding: 25px;
 }
 nav .links {
   width: 100%;
@@ -307,7 +308,7 @@ h5 {
 }
 .team-content i {
   font-size: 4rem;
-  color: white;
+  color: black;
 }
 .team-content a {
   text-decoration: none;
