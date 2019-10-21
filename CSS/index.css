@@ -248,3 +248,68 @@ h5 {
 .footer h3 {
   font-size: 2.4rem;
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+button {
+  background: #AB978D;
+  font-family: 'Prata', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Cinzel Decorative', serif;
+}
+.about-container .about-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-content h1 {
+  font-size: 3.2rem;
+  padding: 40px 0 30px 0;
+}
+.about-content p {
+  text-align: center;
+  line-height: 1.6rem;
+}
+.team .team-intro h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 25px;
+}
+.team-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid grey;
+  margin-bottom: 15px;
+}
+.team-content h3 {
+  font-size: 2.6rem;
+  padding: 25px 0;
+}
+.team-content img {
+  border-radius: 50%;
+  width: 40%;
+  height: 40%;
+}
+.team-content i {
+  font-size: 4rem;
+  color: white;
+}
+.team-content a {
+  text-decoration: none;
+  color: black;
+}
