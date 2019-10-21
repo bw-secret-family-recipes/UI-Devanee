@@ -9,41 +9,73 @@
 html {
     font-size: 62.5%;
 }
-body {
+body, button {
     background: #AB978D;
     font-family: 'Prata', serif;
 }
 h1, h2, h3, h4, h5 {
     font-family: 'Cinzel Decorative', serif;
 }
-
+.main-container {
+    display: flex; 
+    align-items: center;
+}
 
 .main-container {
-    height: 90vh;
+    height: 70vh;
     background: #28293C;
     background: url(https://cdn.pixabay.com/photo/2017/09/07/01/12/bake-2723655_960_720.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
 } // this sets the background image
+
+
 .main-container .main-content {
     display: flex; 
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-items: center;
-    padding: 20px;
+    // padding: 20px;
+    height: 30%;
 }
+
 .main-content {
     background: #AB978D;
-    opacity: 0.6;
-    width: 85%;
+    opacity: 0.7;
 }
 .main-content h1 {
     font-size: 5rem;
+    margin-top: 3%;
+}
+.main-content p {
+    line-height: 2rem;
+    
 }
 .main-content button {
     background-color: whitesmoke;
     padding: 20px 70px;
     font-size: 3rem;
+    border-radius: 10px;
+}
+
+
+
+// ****Footer Section****
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    margin: 20px 0;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+.footer h3 {
+    font-size: 2.4rem;
 }
