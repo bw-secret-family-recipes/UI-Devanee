@@ -203,7 +203,7 @@ h5 {
 .main-container {
   height: 65vh;
   background: #28293C;
-  background: url(https://cdn.pixabay.com/photo/2017/09/07/01/12/bake-2723655_960_720.jpg);
+  background: url(https://images.unsplash.com/photo-1452251889946-8ff5ea7b27ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1330&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -218,7 +218,7 @@ h5 {
 }
 .main-content {
   background: #AB978D;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 .main-content h1 {
   font-size: 5rem;
@@ -226,6 +226,7 @@ h5 {
 }
 .main-content p {
   line-height: 2rem;
+  padding: 0 20px;
 }
 .main-content button {
   background-color: whitesmoke;
