@@ -218,7 +218,7 @@ h5 {
 }
 .main-content {
   background: #AB978D;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 .main-content h1 {
   font-size: 5rem;
@@ -303,6 +303,7 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid #28293C;
 }
 .about-content h1 {
   font-size: 3.2rem;
@@ -311,28 +312,38 @@ h5 {
 .about-content p {
   text-align: center;
   line-height: 1.6rem;
+  margin-bottom: 25px;
 }
-.team .team-intro h2 {
+.team-intro h2 {
   text-align: center;
   font-size: 3rem;
   padding: 25px;
 }
 .team-content {
+  border-top: 1px solid #28293C;
+}
+.team-content {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+}
+.team-content .team-members {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid grey;
-  margin-bottom: 15px;
+  padding: 15px;
 }
-.team-content h3 {
-  font-size: 2.6rem;
-  padding: 25px 0;
+.team-content a {
+  padding: 15px;
 }
-.team-content img {
+.team-content .team-members img {
   border-radius: 50%;
   width: 40%;
-  height: 40%;
+  height: 75%;
+  border: 1px solid #28293C;
 }
 .team-content i {
   font-size: 4rem;
