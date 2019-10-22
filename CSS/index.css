@@ -233,6 +233,7 @@ h5 {
   padding: 20px 70px;
   font-size: 3rem;
   border-radius: 10px;
+  margin-top: 40px;
 }
 .footer {
   display: flex;
@@ -254,27 +255,32 @@ h5 {
   body {
     width: 100%;
   }
-  .logo h1 {
-    display: flex;
-    flex-wrap: wrap;
+  .home .logo .header-main h1 {
+    font-size: 3rem;
   }
-  nav .header-main {
+  .home .logo .header-main {
     text-align: center;
     font-size: 2rem;
   }
-  nav .logo img {
+  .owl-logo {
     width: 10%;
   }
-  .links {
+  .home .logo .links {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  .main-container .main-content h1 {
+    font-size: 3rem;
   }
   .main-container .main-content {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  }
+}
+@media (max-width: 800px) {
+  .main-container {
+    height: 50vh;
   }
 }
 * {
@@ -307,17 +313,37 @@ h5 {
 }
 .about-content h1 {
   font-size: 3.2rem;
-  padding: 40px 0 30px 0;
+  padding: 30px 0 30px 0;
+  font-weight: 900;
 }
 .about-content p {
   text-align: center;
   line-height: 1.6rem;
   margin-bottom: 25px;
 }
+.border-img {
+  height: 12vh;
+  background: url(https://images.unsplash.com/photo-1564149504298-00c351fd7f16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  border: 1px solid #28293C;
+}
 .team-intro h2 {
   text-align: center;
-  font-size: 3rem;
-  padding: 25px;
+  font-size: 3.4rem;
+  padding: 0;
+  margin: 20px 0;
+  font-weight: 900;
+}
+.team-intro {
+  background: whitesmoke;
+  padding: 10px;
+  opacity: 0.7;
+}
+.team-intro h2 {
+  color: #28293C;
 }
 .team-content {
   border-top: 1px solid #28293C;
@@ -330,11 +356,16 @@ h5 {
 .team-content .team-members {
   display: flex;
   flex-wrap: wrap;
-  width: 45%;
+  width: 49%;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  padding: 15px;
+  margin-left: 1%;
+  padding: 20px 0;
+}
+.team-members h3 {
+  font-size: 2.4rem;
+  font-weight: bolder;
 }
 .team-content a {
   padding: 15px;
@@ -342,8 +373,8 @@ h5 {
 .team-content .team-members img {
   border-radius: 50%;
   width: 40%;
-  height: 75%;
-  border: 1px solid #28293C;
+  height: 65%;
+  padding: 10px;
 }
 .team-content i {
   font-size: 4rem;
@@ -352,4 +383,15 @@ h5 {
 .team-content a {
   text-decoration: none;
   color: black;
+}
+.footer {
+  padding: 20px 0;
+}
+@media (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .logo img {
+    width: 5%;
+  }
 }
