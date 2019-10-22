@@ -37,11 +37,8 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    // padding: 20px;
     height: 50%;
-    
 }
-
 .main-content {
     background: #AB978D;
     opacity: 0.9;
@@ -61,17 +58,10 @@ h1, h2, h3, h4, h5 {
     border-radius: 10px;
     margin-top: 40px;
 }
-
-// .article.style1 {
-//     display: flex;
-//     flex-wrap: wrap;
-//     flex-direction: row;
-    
-// }
-// .gallery .article a img{
-//     width: 20%;
-// }
-
+ button:hover{
+    color: whitesmoke;
+    background: #650D1B;
+}
 
 // ****Footer Section****
 .footer {
@@ -90,7 +80,9 @@ h1, h2, h3, h4, h5 {
 .footer h3 {
     font-size: 2.4rem;
 }
-
+.footer a:hover{
+    color: whitesmoke;
+}
 // Media Styles Start Here**
 
 @media (max-width: 500px){
@@ -98,7 +90,7 @@ h1, h2, h3, h4, h5 {
         width: 100%;
     }
     
-    .home .logo .header-main h1{
+    header .header-main h1{
         font-size: 3rem;
     }
     .home .logo .header-main {
@@ -122,6 +114,17 @@ h1, h2, h3, h4, h5 {
         // text-align: center;
         // align-items: center;
         // justify-content: center;        
+    }
+    .main-content {
+        background: #AB978D;
+        opacity: 0.9;
+        padding: 0 auto;
+    }
+    .main-content h1 {
+        font-size: 3rem;
+    }
+    .main-content button {
+        width: 50%;
     }
 }
 

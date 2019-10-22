@@ -1,5 +1,4 @@
 // About Page Styling ***
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -21,7 +20,7 @@ h1, h2, h3, h4, h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #28293C;
+
 }
 .about-content h1 {
     font-size: 3.2rem;
@@ -56,20 +55,16 @@ h1, h2, h3, h4, h5 {
     font-size: 3.4rem;
     padding: 0;
     margin: 20px 0;
-    font-weight: 900;
-
 }
 .team-intro {
-    background: whitesmoke;
+    background: #756363;
     padding: 10px;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 .team-intro h2 {
-    color: #28293C;
+    color: whitesmoke;
 }
-.team-content {
-    border-top: 1px solid #28293C;
-}
+
 .team-content {
     display: flex;
     flex-wrap: wrap;
@@ -82,23 +77,35 @@ h1, h2, h3, h4, h5 {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    // border: 1px solid grey;
     margin-left: 1%;
-    padding: 20px 0;
+    padding: 30px 0;
 }
 .team-members h3 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: bolder;
 }
 .team-content a {
-    padding: 15px;
+   font-size: 2.4rem;
 }
 .team-content .team-members img{
    border-radius: 50%;
    width: 40%;
-   height: 65%;
-   padding: 10px;
+   height: 70%;
 }
+
+.team-content .team-members img {
+    width: 250px;
+    height: 250px; 
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -o-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+}
+.team-content .team-members img:hover{
+    width: 325px;
+    height: 325px;
+}
+
 .team-content i {
     font-size: 4rem;
     color: black;
@@ -106,6 +113,12 @@ h1, h2, h3, h4, h5 {
 .team-content a {
     text-decoration: none;
     color: black;
+}
+.team-content a:hover {
+    color: whitesmoke;
+}
+.team-content i:hover {
+    color: whitesmoke;
 }
 .footer {
     padding: 20px 0;

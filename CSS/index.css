@@ -141,6 +141,9 @@ nav .logo {
   color: black;
   padding: 25px;
 }
+.links a:hover {
+  color: whitesmoke;
+}
 nav .links {
   width: 100%;
   text-align-last: right;
@@ -235,6 +238,10 @@ h5 {
   border-radius: 10px;
   margin-top: 40px;
 }
+button:hover {
+  color: whitesmoke;
+  background: #650D1B;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -251,11 +258,14 @@ h5 {
 .footer h3 {
   font-size: 2.4rem;
 }
+.footer a:hover {
+  color: whitesmoke;
+}
 @media (max-width: 500px) {
   body {
     width: 100%;
   }
-  .home .logo .header-main h1 {
+  header .header-main h1 {
     font-size: 3rem;
   }
   .home .logo .header-main {
@@ -276,6 +286,17 @@ h5 {
   .main-container .main-content {
     display: flex;
     flex-direction: column;
+  }
+  .main-content {
+    background: #AB978D;
+    opacity: 0.9;
+    padding: 0 auto;
+  }
+  .main-content h1 {
+    font-size: 3rem;
+  }
+  .main-content button {
+    width: 50%;
   }
 }
 @media (max-width: 800px) {
@@ -309,7 +330,6 @@ h5 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-bottom: 1px solid #28293C;
 }
 .about-content h1 {
   font-size: 3.2rem;
@@ -335,18 +355,14 @@ h5 {
   font-size: 3.4rem;
   padding: 0;
   margin: 20px 0;
-  font-weight: 900;
 }
 .team-intro {
-  background: whitesmoke;
+  background: #756363;
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 .team-intro h2 {
-  color: #28293C;
-}
-.team-content {
-  border-top: 1px solid #28293C;
+  color: whitesmoke;
 }
 .team-content {
   display: flex;
@@ -361,20 +377,31 @@ h5 {
   flex-direction: column;
   align-items: center;
   margin-left: 1%;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 .team-members h3 {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: bolder;
 }
 .team-content a {
-  padding: 15px;
+  font-size: 2.4rem;
 }
 .team-content .team-members img {
   border-radius: 50%;
   width: 40%;
-  height: 65%;
-  padding: 10px;
+  height: 70%;
+}
+.team-content .team-members img {
+  width: 250px;
+  height: 250px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+}
+.team-content .team-members img:hover {
+  width: 325px;
+  height: 325px;
 }
 .team-content i {
   font-size: 4rem;
@@ -383,6 +410,12 @@ h5 {
 .team-content a {
   text-decoration: none;
   color: black;
+}
+.team-content a:hover {
+  color: whitesmoke;
+}
+.team-content i:hover {
+  color: whitesmoke;
 }
 .footer {
   padding: 20px 0;
