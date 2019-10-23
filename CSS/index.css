@@ -232,7 +232,7 @@ a {
 }
 @media (max-width: 500px) {
   .main-container {
-    height: 600px !important;
+    height: 600px;
   }
 }
 .main-container .main-content {
