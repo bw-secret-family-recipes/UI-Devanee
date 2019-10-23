@@ -215,7 +215,7 @@ html {
 }
 body,
 button {
-  background: red;
+  background: #AB978D;
   font-family: 'Prata', serif;
 }
 h1,
@@ -284,6 +284,7 @@ a {
 .main-content h1 {
   font-size: 5rem;
   margin-top: 20px;
+  color: red;
 }
 @media (max-width: 500px) {
   .main-content h1 {
