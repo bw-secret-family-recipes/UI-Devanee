@@ -9,7 +9,7 @@ html {
     font-size: 62.5%;
 }
 body, button {
-    background: #AB978D;
+    background: @dusty-rose;
     font-family: 'Prata', serif;
 }
 h1, h2, h3, h4, h5 {
@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5 {
     text-align: center;
     line-height: 1.6rem;
     margin-bottom: 25px;
+    padding: 0 20px;
 
     @media @phone {
         padding: 0 10px;
@@ -44,7 +45,7 @@ h1, h2, h3, h4, h5 {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    border: 1px solid #28293C;
+    border: 1px solid @deep-navy;
 
     @media @phone {
         height: 6vh;
@@ -62,12 +63,12 @@ h1, h2, h3, h4, h5 {
     }
 }
 .team-intro {
-    background: #756363;
+    background: @warm-cider;
     padding: 10px;
     opacity: 0.9;
 }
 .team-intro h2 {
-    color: whitesmoke;
+    color: @whitesmoke;
 }
 
 .team-content {
@@ -110,10 +111,11 @@ h1, h2, h3, h4, h5 {
 .team-content .team-members img {
     width: 250px;
     height: 250px; 
-        -webkit-transition: all 1s ease;
-        -moz-transition: all 1s ease;
-        -o-transition: all 1s ease;
-        -ms-transition: all 1s ease;
+    transition: all 1s ease;
+        // -webkit-transition: all 1s ease;
+        // -moz-transition: all 1s ease;
+        // -o-transition: all 1s ease;
+        // -ms-transition: all 1s ease;
 }
 .team-content .team-members img:hover{
     width: 325px;
@@ -122,17 +124,17 @@ h1, h2, h3, h4, h5 {
 
 .team-content i {
     font-size: 4rem;
-    color: black;
+    color: .maincolor();
 }
 .team-content a {
     text-decoration: none;
-    color: black;
+    color: .maincolor();
 }
 .team-content a:hover {
-    color: whitesmoke;
+    color: @whitesmoke;
 }
 .team-content i:hover {
-    color: whitesmoke;
+    color: @whitesmoke;
 }
 .footer {
     padding: 20px 0;

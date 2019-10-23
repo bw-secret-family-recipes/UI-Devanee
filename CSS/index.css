@@ -146,7 +146,7 @@ nav .logo {
 }
 nav a {
   text-decoration: none;
-  color: black;
+  color: [object Object];
   padding: 25px;
 }
 @media (max-width: 500px) {
@@ -155,7 +155,7 @@ nav a {
   }
 }
 nav a:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 nav .logo img {
   width: 8%;
@@ -219,6 +219,9 @@ h5 {
   display: flex;
   align-items: center;
 }
+a {
+  color: black;
+}
 .main-container {
   height: 65vh;
   background: #28293C;
@@ -229,7 +232,7 @@ h5 {
 }
 @media (max-width: 500px) {
   .main-container {
-    height: 600px;
+    height: 600px !important;
   }
 }
 .main-container .main-content {
@@ -242,28 +245,28 @@ h5 {
 }
 @media (max-width: 500px) {
   .main-container .main-content {
-    height: 500px;
+    height: 525px;
   }
 }
 .main-content {
   background: #AB978D;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 @media (max-width: 500px) {
   .main-content {
-    opacity: 0.85;
+    opacity: 0.9;
     height: 80%;
   }
 }
 .main-content h1 {
   font-size: 5rem;
-  margin-top: 3%;
+  margin-top: 20px;
 }
 @media (max-width: 500px) {
   .main-content h1 {
     font-size: 3.2rem;
     font-weight: 900;
-    margin-top: 0;
+    margin-top: 10px !important;
     margin-bottom: 20px;
   }
 }
@@ -273,26 +276,31 @@ h5 {
 }
 @media (max-width: 500px) {
   .main-content p {
-    line-height: 1.6rem;
+    line-height: 1.5rem;
   }
 }
 .main-content button {
-  background-color: whitesmoke;
+  background: #F5F5F5;
   padding: 20px 70px;
   font-size: 3rem;
   border-radius: 15px;
   margin-top: 40px;
 }
+.main-content button button:hover {
+  color: #F5F5F5;
+  background: #650D1B;
+}
 @media (max-width: 500px) {
   .main-content button {
     height: 60px;
-    width: 80%;
-    margin-top: 5px;
-    font-size: 2.6rem;
+    width: 90%;
+    margin-top: 10px;
+    font-size: 2.5rem;
+    padding-bottom: 50px;
   }
 }
 button:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
   background: #650D1B;
 }
 .footer {
@@ -312,7 +320,7 @@ button:hover {
 }
 .footer a {
   text-decoration: none;
-  color: black;
+  color: [object Object];
 }
 .footer h3 {
   font-size: 2.4rem;
@@ -323,7 +331,7 @@ button:hover {
   }
 }
 .footer a:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 @media (max-width: 800px) {
   .main-container {
@@ -366,6 +374,7 @@ h5 {
   text-align: center;
   line-height: 1.6rem;
   margin-bottom: 25px;
+  padding: 0 20px;
 }
 @media (max-width: 500px) {
   .about-content p {
@@ -403,7 +412,7 @@ h5 {
   opacity: 0.9;
 }
 .team-intro h2 {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 .team-content {
   display: flex;
@@ -446,10 +455,7 @@ h5 {
 .team-content .team-members img {
   width: 250px;
   height: 250px;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 .team-content .team-members img:hover {
   width: 325px;
@@ -457,17 +463,17 @@ h5 {
 }
 .team-content i {
   font-size: 4rem;
-  color: black;
+  color: [object Object];
 }
 .team-content a {
   text-decoration: none;
-  color: black;
+  color: [object Object];
 }
 .team-content a:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 .team-content i:hover {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 .footer {
   padding: 20px 0;

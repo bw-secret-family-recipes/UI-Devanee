@@ -1,0 +1,25 @@
+
+// Mixins Here
+.maincolor(){
+    color: black;
+}
+
+.radius(){
+    border-radius: 15px;
+}
+
+
+// Main Button Here
+.btn(@btn-bg-color, @btn-hover-color) {
+    background: @whitesmoke;
+    padding: 20px 70px;
+    font-size: 3rem;
+    border-radius: 15px;
+    margin-top: 40px;
+
+    button:hover{
+        color: @whitesmoke;
+        background: @btn-hover-color;
+    }
+}
+
