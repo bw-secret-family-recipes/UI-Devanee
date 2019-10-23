@@ -136,32 +136,41 @@ nav .logo {
   width: 100%;
   height: 8vh;
 }
-.links a {
+@media (max-width: 500px) {
+  nav .logo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+nav a {
   text-decoration: none;
   color: black;
   padding: 25px;
 }
-.links a:hover {
+nav a:hover {
   color: whitesmoke;
 }
-nav .links {
-  width: 100%;
-  text-align-last: right;
-}
 nav .logo img {
-  width: 7%;
+  width: 8%;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  nav .logo img {
+    width: 18%;
+    margin-left: 10%;
+  }
 }
 .logo h1 {
   font-size: 4rem;
   text-align: center;
-  margin-left: -5%;
+  margin-left: -10%;
 }
-nav .header-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 90%;
+@media (max-width: 500px) {
+  .logo h1 {
+    font-size: 5rem;
+    text-align: center;
+  }
 }
 @font-face {
   font-family: 'Cinzel Decorative';
@@ -219,6 +228,11 @@ h5 {
   justify-content: center;
   height: 50%;
 }
+@media (max-width: 500px) {
+  .main-container .main-content {
+    height: 60%;
+  }
+}
 .main-content {
   background: #AB978D;
   opacity: 0.9;
@@ -227,9 +241,21 @@ h5 {
   font-size: 5rem;
   margin-top: 3%;
 }
+@media (max-width: 500px) {
+  .main-content h1 {
+    font-size: 3.2rem;
+    font-weight: 900;
+    padding-top: 10%;
+  }
+}
 .main-content p {
   line-height: 2rem;
   padding: 0 20px;
+}
+@media (max-width: 500px) {
+  .main-content p {
+    line-height: 1.8rem;
+  }
 }
 .main-content button {
   background-color: whitesmoke;
@@ -237,6 +263,14 @@ h5 {
   font-size: 3rem;
   border-radius: 10px;
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .main-content button {
+    height: 70px;
+    width: 70%;
+    margin-top: 5px;
+    font-size: 2.6rem;
+  }
 }
 button:hover {
   color: whitesmoke;
@@ -248,8 +282,14 @@ button:hover {
   align-items: center;
   justify-content: stretch;
   margin: 20px 0;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .footer p,
+  a {
+    font-size: 1rem;
+  }
 }
 .footer a {
   text-decoration: none;
@@ -258,46 +298,13 @@ button:hover {
 .footer h3 {
   font-size: 2.4rem;
 }
-.footer a:hover {
-  color: whitesmoke;
-}
 @media (max-width: 500px) {
-  body {
-    width: 100%;
-  }
-  header .header-main h1 {
-    font-size: 3rem;
-  }
-  .home .logo .header-main {
-    text-align: center;
+  .footer h3 {
     font-size: 2rem;
   }
-  .owl-logo {
-    width: 10%;
-  }
-  .home .logo .links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .main-container .main-content h1 {
-    font-size: 3rem;
-  }
-  .main-container .main-content {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-content {
-    background: #AB978D;
-    opacity: 0.9;
-    padding: 0 auto;
-  }
-  .main-content h1 {
-    font-size: 3rem;
-  }
-  .main-content button {
-    width: 50%;
-  }
+}
+.footer a:hover {
+  color: whitesmoke;
 }
 @media (max-width: 800px) {
   .main-container {
@@ -341,6 +348,11 @@ h5 {
   line-height: 1.6rem;
   margin-bottom: 25px;
 }
+@media (max-width: 500px) {
+  .about-content p {
+    padding: 0 10px;
+  }
+}
 .border-img {
   height: 12vh;
   background: url(https://images.unsplash.com/photo-1564149504298-00c351fd7f16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
@@ -350,11 +362,21 @@ h5 {
   width: 100%;
   border: 1px solid #28293C;
 }
+@media (max-width: 500px) {
+  .border-img {
+    height: 6vh;
+  }
+}
 .team-intro h2 {
   text-align: center;
   font-size: 3.4rem;
   padding: 0;
   margin: 20px 0;
+}
+@media (max-width: 500px) {
+  .team-intro h2 {
+    font-size: 2.8rem;
+  }
 }
 .team-intro {
   background: #756363;
@@ -369,6 +391,12 @@ h5 {
   flex-wrap: wrap;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .team-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .team-content .team-members {
   display: flex;
   flex-wrap: wrap;
@@ -378,6 +406,11 @@ h5 {
   align-items: center;
   margin-left: 1%;
   padding: 30px 0;
+}
+@media (max-width: 500px) {
+  .team-content .team-members {
+    width: 100%;
+  }
 }
 .team-members h3 {
   font-size: 2.6rem;
