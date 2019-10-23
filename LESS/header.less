@@ -12,12 +12,17 @@ nav .logo {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        height: 11vh;
     }
 }
 nav a {
     text-decoration: none;
     color: black;
     padding: 25px;
+     
+    @media @phone {
+        padding: 32px; 
+    }
 }
 nav a:hover{
     color: whitesmoke;
@@ -28,8 +33,8 @@ nav .logo img {
     padding: 1%;
 
     @media @phone {
-        width: 18%;
-        margin-left: 10%;
+        width: 25%;
+        margin-left: 5%;
     }
 }
 .logo h1 {
@@ -38,9 +43,9 @@ nav .logo img {
     margin-left: -10%;
 
     @media @phone {
-        font-size: 5rem;
+        font-size: 3.6rem;
         text-align: center;
-     
+        margin-right: 5%;
     }
 }
 
