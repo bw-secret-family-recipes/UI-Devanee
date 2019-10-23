@@ -1,6 +1,6 @@
 /* Header Coding Here */
 nav .logo {
-    display: flex;
+    .flex();
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
@@ -9,7 +9,7 @@ nav .logo {
     height: 140px;
 
     @media @phone {
-        display: flex;
+        .flex();
         flex-wrap: wrap;
         flex-direction: row;
         height: 130px;
@@ -27,7 +27,6 @@ nav a {
 nav a:hover{
     color: @whitesmoke;
 }
-
 nav .logo img {
     width: 8%;
     padding: 1%;
@@ -35,6 +34,10 @@ nav .logo img {
     @media @phone {
         width: 15%;
         margin-left: 5%;
+
+        @media @tablet {
+            width: 10%;
+        }
     }
 }
 .logo h1 {
@@ -43,9 +46,13 @@ nav .logo img {
     margin-left: -10%;
 
     @media @phone {
-        font-size: 3.6rem;
+        font-size: 3rem;
         text-align: center;
-        margin-right: 5%;
+        margin-right: 15%;
+
+        @media @tablet {
+            font-size: 3.6rem;
+        }
     }
 }
 

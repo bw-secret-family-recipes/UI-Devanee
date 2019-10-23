@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5 {
     font-family: 'Cinzel Decorative', serif;
 }
 .main-container {
-    display: flex; 
+    .flex();
     align-items: center;
 }
 a {
@@ -34,11 +34,15 @@ a {
     @media @phone {
         height: 600px;
     }
+
+    @media @tablet{
+        height: 55vh;
+    }
 } // this sets the background image
 
 
 .main-container .main-content {
-    display: flex; 
+    .flex();
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -56,6 +60,10 @@ a {
     @media @phone {
         opacity: 0.9;
         height: 80%;
+
+        @media @tablet {
+            height: 80%;
+        }
     }
 }
 .main-content h1 {
@@ -74,10 +82,10 @@ a {
     padding: 0 20px;
 
     @media @phone {
-        line-height: 1.5rem;
+        line-height: 1.4rem;
     }
 }
-.main-content button {
+.main-content button{
     .btn(@btn-bg-color, @btn-hover-color);
         
         @media @phone {
@@ -95,7 +103,7 @@ a {
 
 // ****Footer Section****
 .footer {
-    display: flex;
+    .flex();
     flex-direction: column;
     align-items: center;
     justify-content: stretch;
