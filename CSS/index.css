@@ -186,7 +186,7 @@ nav .logo img {
 }
 @media (max-width: 500px) and (max-width: 800px) {
   .logo h1 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
   }
 }
 @font-face {
@@ -225,12 +225,14 @@ h4,
 h5 {
   font-family: 'Cinzel Decorative', serif;
 }
+a {
+  color: black;
+}
 .main-container {
   display: flex;
   align-items: center;
-}
-a {
-  color: black;
+  position: relative;
+  overflow: scroll;
 }
 .main-container {
   height: 65vh;
@@ -266,11 +268,12 @@ a {
 .main-content {
   background: #AB978D;
   opacity: 0.9;
+  position: static;
 }
 @media (max-width: 500px) {
   .main-content {
     opacity: 0.9;
-    height: 80%;
+    height: 70%;
   }
 }
 @media (max-width: 500px) and (max-width: 800px) {
