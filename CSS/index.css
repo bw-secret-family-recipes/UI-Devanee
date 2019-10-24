@@ -167,7 +167,7 @@ nav .logo img {
     margin-left: 5%;
   }
 }
-@media (max-width: 500px) and (max-width: 800px) {
+@media (max-width: 800px) {
   nav .logo img {
     width: 10%;
   }
@@ -184,9 +184,10 @@ nav .logo img {
     margin-right: 15%;
   }
 }
-@media (max-width: 500px) and (max-width: 800px) {
+@media (max-width: 800px) {
   .logo h1 {
     font-size: 3.2rem;
+    padding-left: 5%;
   }
 }
 @font-face {
