@@ -269,7 +269,7 @@ a {
 }
 .main-content {
   background: #AB978D;
-  opacity: 0.9;
+  opacity: 0.85;
   position: static;
 }
 @media (max-width: 500px) {
