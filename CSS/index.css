@@ -302,6 +302,10 @@ a {
     line-height: 1.4rem;
   }
 }
+.main-content h2 {
+  font-weight: bolder;
+  font-size: 2rem;
+}
 .main-content button {
   background: #F5F5F5;
   padding: 20px 70px;
